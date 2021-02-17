@@ -1,0 +1,9 @@
+---
+- name: Install GitHub Actions Runner
+  hosts: all
+  become: yes
+  user: "{{ runner_user }}"
+  roles:
+    - role: monolithprojects.github_actions_runner
+  vars_files:
+    - defaults/main.yml

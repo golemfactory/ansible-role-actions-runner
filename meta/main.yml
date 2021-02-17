@@ -1,0 +1,21 @@
+galaxy_info:
+  author: Jakub Mazurek
+  description: GitHub self-hosted runner setup
+  company: Golem Factory GmbH
+  license: BSD
+  min_ansible_version: 2.9.8
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+
+  galaxy_tags:
+    - github
+    - self-hosted
+    - runner
+    - golem
+
+dependencies:
+  - src: monolithprojects.github_actions_runner
+    version: v1.5.1
